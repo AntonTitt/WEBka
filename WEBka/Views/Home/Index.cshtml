@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "FileAnalysis";
+}
+
+<form asp-controller="Home" asp-action="UploadFiles" enctype="multipart/form-data" method="post">
+    <div>
+        <label for="files">Загрузить файлы:</label>
+        <input type="file" name="files" id="files" multiple />
+    </div>
+    <button type="submit">Upload</button>
+</form>

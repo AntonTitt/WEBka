@@ -1,0 +1,51 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: absolute;
+    margin:0px 150px;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.table {
+    border: 1px solid #eee;
+    table-layout: auto;
+    width: 115%;
+    margin-bottom: 20px;
+}
+
+    .table th {
+        font-weight: bold;
+        padding: 5px;
+        background: #efefef;
+        border: 1px solid #dddddd;
+    }
+
+    .table td {
+        padding: 5px 10px;
+        border: 1px solid #eee;
+        text-align: left;
+    }
+
+    .table tbody tr:nth-child(odd) {
+        background: #fff;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background: #F7F7F7;
+    }

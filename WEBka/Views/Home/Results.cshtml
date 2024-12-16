@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WEBka.Models.AnalysisResult>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Имя Файла</th>
+            <th>Тест 1</th>
+            <th>Тест 2</th>
+            <th>Тест 3</th>
+            <th>Тест 4</th>
+            <th>Тест 5</th>
+            <th>Тест 6</th>
+            <th>Время Загрузки</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var result in Model)
+        {
+            <tr>
+                <td>@result.FileName</td>
+                <td>@result.ResultData[0]</td>
+                
+                <td  >
+                    Установлена
+                    подлинность
+                    обновлений
+                </td>
+                <td  >
+                    Не выявлены признаки
+                    вредоносной активности
+
+                </td>
+                <td  >
+                    Опасные конструкции не
+                    найдены
+                </td>
+                <td  >
+                    Не выявлено признаков
+                    недекларированных возможностей
+                </td>
+                <td  >
+                    Наличие
+                    недекларированных
+                    возможностей
+                    опровергнуто
+                </td>
+                <td>@result.CreatedAt</td>
+            </tr>
+        }
+    </tbody>
+</table>
